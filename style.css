@@ -1,0 +1,145 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 3fr 5fr 1fr;
+    grid-template-areas: "header header header header header header"
+    "intro intro intro intro profile profile"
+    "projects projects projects projects projects projects"
+    "footer footer footer footer footer footer";
+}
+
+header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #b1aaa3;
+    grid-area: header;
+}
+
+.intro {
+    background-color: #f2f2f2;
+    grid-area: intro;
+}
+
+.profile {
+background-color: aquamarine;
+grid-area: profile;
+}
+
+.projects {
+background-color: #b1aaa3;
+grid-area: projects;
+}
+
+footer {
+    background-color:bisque;
+    grid-area: footer;
+}
+
+
+/* Last File 
+
+
+div#logo_name {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-self: start;
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+img#logo_header {
+    padding: 20px;
+    width: 100px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: start;
+}
+h1.title {
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.4em; 
+    color: #fff;
+    padding-bottom: 17px;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    justify-self: start;
+}
+
+
+#intro-message {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 20px;
+}
+
+
+
+#intro-container h1 {
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+#intro-container h2 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    }
+
+img#profile_photo_header {
+    padding: 20px;
+    width: 80%;
+}
+
+
+
+nav { 
+    justify-items: end;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+nav ul li {
+text-align: center;
+list-style-type: none;
+display: block;
+float: left;
+padding-right: 15px;
+padding-left: 15px;
+padding-bottom: 12px;
+}
+
+nav ul li a:link {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: border 0.3s ease-in;
+}
+
+nav ul li a:visited {
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+nav ul li a:active {
+    color: #fff;
+}
+
+*/
