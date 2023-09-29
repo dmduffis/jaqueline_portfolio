@@ -7,9 +7,9 @@
 .grid-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 6fr 1fr;
+    grid-template-rows: 0.7fr 2fr 6.3fr 1fr;
     grid-template-areas: "header header header header header header"
-    "intro intro intro profile profile profile"
+    "intro intro intro intro profile profile"
     "projects projects projects projects projects projects"
     "footer footer footer footer footer footer";
 }
@@ -17,10 +17,14 @@
 header {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #b1aaa3;
+    background-color: #a7a099;
     display: grid;
     grid-area: header;
     grid-template-columns: 1fr 1fr;
+}
+
+.space-intro {
+    grid-area: space-intro;
 }
 
 .brand {
@@ -43,7 +47,7 @@ header h1 {
 }
 
 img.logo {
-    width: 80px;
+    width: 60px;
     padding: 20px;
 }
 
@@ -71,9 +75,9 @@ nav ul li {
 
 nav ul li a:link {
     text-decoration: none;
-    border: 1px solid #b1aaa3;
+    outline: 1px solid none;
     border-radius: 30px;
-    transition: border 0.4s ease-in-out;
+    transition: outline 0.2s ease-in-out;
     color: #fff;
     padding: 10px;
 }
@@ -81,17 +85,17 @@ nav ul li a:link {
 
 nav ul li a:visited {
     color: #fff;
-    border: 1px solid #b1aaa3;
+    outline: 1px solid none;
     border-radius: 30px;
 }
 
 nav ul li a:hover {
-    border: 1px solid #fff;
+    outline: 1px solid #fff;
     border-radius: 30px;
     }
 
 nav ul li.social a:hover {
-    border: 1px solid #b1aaa3;
+    outline: none;
     border-radius: 30px;
 }
 
@@ -102,30 +106,135 @@ nav ul li a:active {
 nav ul li.social a:link img {
     width: 25px;
     height: 25px;
-    transition: border 0.2s, opacity 0.2s ease-in-out;
+    transition: outline 0.3s, opacity 0.3s ease-in-out;
     padding: none;
     opacity: 0.7;
     margin-right: -20px;
 }
 
 nav ul li.social a:hover img {
-    border: none;
+    outline: none;
     opacity: 1;
     }
 
 
 .intro {
-    background-color: #f2f2f2;
     grid-area: intro;
+    display: grid;
+    background-color: #a7a099;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    flex-basis: content;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 30px;
 }
+
+.intro h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.5vw;
+    text-align: center;
+    color: #ebebeb; 
+}
+
+.intro span {
+    font-weight: 700;
+    border-bottom: 3px solid #f2f2f2;
+    color:#fcde8b;
+}
+
+.intro button.cv {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 3vw;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    min-width: 0;
+    outline: none;
+    margin-top: 20px;
+    padding: 1vw;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  
+  .intro button.cv:hover  {
+    background-color: #ffffff;
+    color: #a7a099;
+  }
+
+
+  .intro button.hireme {
+    appearance: none;
+    background-color: #fff;
+    border: 2px solid #ffffff;
+    border-radius: 3vw;
+    box-sizing: border-box;
+    color: #a7a099;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 20px;
+    min-width: 0;
+    outline: none;
+    margin-top: 20px;
+    padding: 1vw;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  
+  .intro button.hireme:hover  {
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    
+  }
+
 
 .profile {
-background-color: aquamarine;
-grid-area: profile;
+    grid-area: profile;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: fit-content;
+    background-color: #a7a099;
+    align-content: end;
+    align-items: end;
+    justify-content: start;
+    justify-items: start;
 }
 
+.profile img {
+    object-fit: contain;
+    position: relative;
+    width: 25vw;
+    padding-right: 40px;
+
+}
+
+
 .projects {
-background-color: #b1aaa3;
+background-color:rgb(253, 250, 245);
 grid-area: projects;
 }
 
@@ -133,4 +242,7 @@ footer {
     background-color:bisque;
     grid-area: footer;
 }
+
+
+
 
