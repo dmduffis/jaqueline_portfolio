@@ -156,7 +156,7 @@ nav ul li.social a:hover img {
     cursor: pointer;
     display: inline-block;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     font-weight: 400;
     line-height: normal;
     margin: 0;
@@ -180,15 +180,15 @@ nav ul li.social a:hover img {
 
   .intro button.hireme {
     appearance: none;
-    background-color: #fff;
-    border: 2px solid #ffffff;
+    background-color: #4b1b41;
+    border: 2px solid #4b1b41;
     border-radius: 3vw;
     box-sizing: border-box;
-    color: #a7a099;
+    color: #fff;
     cursor: pointer;
     display: inline-block;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     font-weight: 400;
     line-height: normal;
     margin-right: 20px;
@@ -205,9 +205,9 @@ nav ul li.social a:hover img {
   
   
   .intro button.hireme:hover  {
-    color: #ffffff;
-    background-color: transparent;
-    border: 2px solid #fff;
+    background-color: #663c5b;
+    border: 2px solid #663c5b;
+
     
   }
 
