@@ -146,7 +146,32 @@ nav ul li.social a:hover img {
     color:#fcde8b;
 }
 
-.intro button.cv {
+.intro a.cv:link {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 3vw;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1vw;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    min-width: 0;
+    outline: none;
+    margin-top: 20px;
+    padding: 1vw;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .intro a.cv:visited {
     appearance: none;
     background-color: transparent;
     border: 2px solid #ffffff;
@@ -172,13 +197,38 @@ nav ul li.social a:hover img {
   }
   
   
-  .intro button.cv:hover  {
+  .intro a.cv:hover  {
     background-color: #ffffff;
     color: #a7a099;
   }
 
 
-  .intro button.hireme {
+  .intro a.hireme:link {
+    appearance: none;
+    background-color: #4b1b41;
+    border: 2px solid #4b1b41;
+    border-radius: 3vw;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1vw;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 20px;
+    min-width: 0;
+    outline: none;
+    margin-top: 20px;
+    padding: 1vw;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .intro a.hireme:visited {
     appearance: none;
     background-color: #4b1b41;
     border: 2px solid #4b1b41;
@@ -204,7 +254,7 @@ nav ul li.social a:hover img {
   }
   
   
-  .intro button.hireme:hover  {
+  .intro a.hireme:hover  {
     background-color: #663c5b;
     border: 2px solid #663c5b;
 
@@ -236,7 +286,119 @@ nav ul li.social a:hover img {
 .projects {
 background-color:rgb(253, 250, 245);
 grid-area: projects;
+padding-top: 50px;
 }
+
+.project_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+.project_left {
+ display: flex;
+ background-image: url("./images/project-01/fashion-biju-cover.jpeg");
+ background-size: cover;
+ background-position: center center;
+ background-color: #ebebeb;
+ transition: all 0.2s ease-in-out;
+ border-radius: 40px;
+ width: 40vw;
+ height: 40vh;
+ margin-right: 20px;
+ margin-bottom: 20px;
+
+}
+
+.project_left:hover {
+   transform: scale(1.02);
+}
+
+
+.description {
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    width: inherit;
+    background-color:#663c5b;
+    border-radius: 40px;
+    height: 100px;
+    opacity: 0.95;
+    transition: all 0.2s ease-in-out;
+ }
+
+ .description:hover {
+    opacity: 1;
+    background-color: #4b1b41;
+ }
+
+.description h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px;
+   }
+
+.description p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px;
+    color: #fff;
+   }
+
+   .description p a:link, .description p a:visited  {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+   }
+
+   .description p a:hover {
+    color: #fcde8b;
+   }
+
+
+   .description span img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: -9px;
+    margin-left: 5px;
+    transition: all 0.2s ease-in-out;
+   }
+
+   .description span img:hover {
+   transform: rotate(-45deg);
+   }
+
+
+.project_right {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: #ebebeb;
+    border-radius: 40px;
+    width: 40vw;
+    height: 40vh;
+    margin-left: 20px; 
+    margin-bottom: 20px;
+   }
+
+/*.project_description_right {
+    background-color: #4b1b41;
+    border-radius: 40px;
+    margin-left: 20px;
+
+}
+*/
+
 
 footer {
     background-color:bisque;
